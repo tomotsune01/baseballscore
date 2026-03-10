@@ -1,0 +1,56 @@
+.match-setup {
+  min-height: 80vh;
+}
+
+.setup-card {
+  background-color: var(--bg-card);
+  padding: var(--spacing-8);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+  width: 100%;
+  max-width: 400px;
+}
+
+.gap-4 {
+  gap: var(--spacing-4);
+}
+
+.mt-4 {
+  margin-top: var(--spacing-4);
+}
+
+.form-group label {
+  font-size: var(--font-size-sm);
+  color: var(--text-muted);
+  margin-bottom: var(--spacing-1);
+}
+
+.form-group input {
+  padding: var(--spacing-2) var(--spacing-3);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--bg-card-hover);
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  font-size: var(--font-size-base);
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus {
+  border-color: var(--accent-primary);
+}
+
+.btn-primary {
+  background-color: var(--accent-primary);
+  color: white;
+  border: none;
+  padding: var(--spacing-3) var(--spacing-6);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-semibold);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-primary:hover {
+  background-color: #2563eb; /* Blue 600 */
+}

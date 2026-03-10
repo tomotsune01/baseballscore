@@ -1,0 +1,92 @@
+.scoreboard-container {
+  background-color: var(--bg-card);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-4);
+  box-shadow: var(--shadow-lg);
+  margin-bottom: var(--spacing-6);
+}
+
+.scoreboard-header {
+  border-bottom: 1px solid var(--bg-card-hover);
+  padding-bottom: var(--spacing-2);
+}
+
+.current-inning {
+  color: var(--color-inning);
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-bold);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+}
+
+.mb-4 {
+  margin-bottom: var(--spacing-4);
+}
+
+.scoreboard-table-wrapper {
+  overflow-x: auto;
+}
+
+.scoreboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: var(--font-size-sm);
+  white-space: nowrap;
+}
+
+.scoreboard-table th {
+  color: var(--text-muted);
+  font-weight: normal;
+  padding: var(--spacing-2) var(--spacing-1);
+  border-bottom: 1px solid var(--bg-card-hover);
+  min-width: 24px;
+}
+
+.scoreboard-table td {
+  padding: var(--spacing-3) var(--spacing-1);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.scoreboard-table tr:last-child td {
+  border-bottom: none;
+}
+
+.team-col {
+  width: 30%;
+  max-width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: var(--spacing-2) !important;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.total-col {
+  width: 10%;
+  border-left: 2px solid var(--bg-card-hover);
+  background-color: rgba(0,0,0,0.2);
+  min-width: 32px;
+}
+
+.stat-col {
+  width: 10%;
+  color: var(--text-muted);
+}
+
+.score-highlight {
+  color: var(--accent-warning);
+  font-size: var(--font-size-base);
+}
+
+.active-team {
+  background-color: rgba(59, 130, 246, 0.1);
+  transition: background-color 0.3s;
+}
+
+.active-team .team-col {
+  color: var(--accent-primary);
+}
